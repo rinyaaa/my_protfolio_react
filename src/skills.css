@@ -1,0 +1,88 @@
+
+@media screen and (max-width:1490px) {
+   
+  
+    .tec {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        padding: 10px 80px;
+        flex-wrap: wrap;
+        margin-top: -30px;
+        
+        
+    }
+    
+    .tec li {
+        display: inline;
+        padding-bottom: 1px;
+        display: block;
+        text-decoration: none;
+        font-size: 20px;
+        padding: 20px;
+        text-align: center;
+        font-size: 22px;
+      
+    }
+     
+    
+  }
+  
+  
+  /*使用したことがる*/
+  #projects h2 {
+    text-align: center;
+    padding-top: 15px;
+    font-family: "Amatic SC", sans-serif;
+    font-size: 80px;
+  }
+  .starsorange{
+    color: orange;
+  }
+  
+  #projects {
+    background-color: whitesmoke;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 100px; /*自己紹介とできることの間*/
+  }
+
+  .yok {
+    display: flex;
+    justify-content: center;
+    margin-top: -40px; /*h2と経験年数などの間*/
+  }
+  
+
+  
+  
+  @media screen and (min-width:1491px) {
+
+   
+  
+    .tec {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        padding: 10px 100px;
+        flex-wrap: wrap;
+        margin-left: 20px;
+        
+    }
+  
+    .tec li {
+        display: inline;
+        padding-bottom: 1px;
+        display: block;
+        text-decoration: none;
+        color: black;
+        font-size: 20px;
+        padding: 20px;
+        text-align: center;
+    }
+   
+
+    
+    
+  
+  }
