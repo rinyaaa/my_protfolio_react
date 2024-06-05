@@ -32,9 +32,9 @@ function Timeline() {
                 </div>
 
             </section>
-            </div>
+        </div>
 
-            );
+    );
 }
 
-            export default Timeline;
+export default Timeline;

@@ -1,7 +1,7 @@
 /* styles.css */
 
 
-.timecolor{
+.timecolor {
     background-color: whitesmoke;
 }
 
@@ -9,16 +9,19 @@
     text-align: center;
     font-family: "Amatic SC", sans-serif;
     font-size: 80px;
-  }
-  .timecolor h3{
-    font-size: 22px;
-  }
+}
 
-.timecolor h3 p{/*年などを書いてるの設定*/
+.timecolor h3 {
+    font-size: 22px;
+}
+
+.timecolor h3 p {
+    /*年などを書いてるの設定*/
     font-size: 14px;
-    margin-top: -8px ;
+    margin-top: -8px;
 
 }
+
 .timeline {
     position: relative;
     max-width: 1200px;
@@ -37,17 +40,19 @@
     position: absolute;
     width: 25px;
     height: 25px;
-    right: 2.6%; 
+    right: 2.6%;
     border: 4px solid #4CAF50;
     top: 0px;
-    border-radius: 50%; /*円にしてる*/
+    border-radius: 50%;
+    /*円にしてる*/
     z-index: 1;
     background-color: #4CAF50;
 }
 
 
 .right {
-    left: 50%; /*右の線を左に合わせてる*/
+    left: 50%;
+    /*右の線を左に合わせてる*/
 }
 
 .left::before {
@@ -56,7 +61,8 @@
     position: absolute;
     top: 0;
     right: 30px;
-    width: 10px; /*線の太さ*/
+    width: 10px;
+    /*線の太さ*/
     background-color: #4CAF50;
     z-index: 1;
 }
@@ -73,7 +79,8 @@
 }
 
 .right::after {
-    left:29.5px;/*円の場所を調整*/
+    left: 29.5px;
+    /*円の場所を調整*/
 }
 
 .content {

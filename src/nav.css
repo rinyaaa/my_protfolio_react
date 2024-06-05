@@ -4,12 +4,11 @@ header {
   background: whitesmoke;
   color: black;
   padding: 1em 0;
-  padding-bottom: 0.00835px;
   text-align: right;
 }
-header img{
+
+header img {
   width: 50px;
-  
 }
 
 h1 {
@@ -17,133 +16,180 @@ h1 {
   margin-top: -10px;
 }
 
-nav{
-    width: auto;
+nav {
+  width: auto;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 1rem;
+  list-style: none;
+  padding-bottom: 1px;
+}
+
+
+.gnavi li a {
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+  text-align: center;
+  color: black;
+  font-size: 1em;
+}
+
+.gnavi li {
+  position: relative;
+  margin: 0 10px;
+}
+
+.gnavi li::before,
+.gnavi li::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background: #0481A2;
+  transition: all 0.2s linear;
+  transition-delay: 0.2s;
+}
+
+.gnavi li::before {
+  right: 0;
+  top: 0;
+}
+
+.gnavi li::after {
+  left: 0;
+  bottom: 0;
+}
+
+.gnavi li span {
+  display: block;
+}
+
+.gnavi li span::before,
+.gnavi li span::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 0;
+  background: #0481A2;
+  transition: all 0.2s linear;
+}
+
+.gnavi li span::before {
+  left: 0;
+  top: 0;
+}
+
+.gnavi li span::after {
+  right: 0;
+  bottom: 0;
+}
+
+.gnavi li.current::before,
+.gnavi li.current::after,
+.gnavi li:hover::before,
+.gnavi li:hover::after {
+  width: 100%;
+}
+
+.gnavi li.current span::before,
+.gnavi li.current span::after,
+.gnavi li:hover span::before,
+.gnavi li:hover span::after {
+  height: 100%;
+}
+
+.link_icon {
+  margin-right: 8px;
+}
+
+.img_wrap:hover {
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+  transform: translateY(-2.5px);
+  transition-duration: 0.5s;
+}
+
+/* ハンバーガーメニューアイコンのスタイル */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  padding-left: 90%; /*ナビアイコンを右からみだりにしてる*/
+}
+
+.menu-toggle .bar {
+  width: 25px;
+  height: 3px;
+  background-color: black;
+  margin: 4px 0;
+  transition: 0.4s;
+}
+
+/* バツアイコンのスタイル */
+.menu-toggle.active .top-bar {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.menu-toggle.active .middle-bar {
+  opacity: 0;
+}
+
+.menu-toggle.active .bottom-bar {
+  transform: rotate(-45deg) translate(10px, -11px);
+}
+
+@media (min-width:481px) {
+  .gnavi {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 0 30px 0;
+    list-style: none;
   }
+}
+
+/* モバイル用ナビゲーションメニューのスタイル */
+@media (max-width: 480px) {
   nav ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-      display: flex;
-      justify-content: center;
+    flex-direction: column;
+    display: none;
+    width: 100%;
+    background-color: whitesmoke;
+    text-align: center;
   }
-  
-  
+
+  nav ul.active {
+    display: flex;
+  }
+
   nav ul li {
-      display: inline;
-      margin: 0 1rem;
-      list-style: none;
-      padding-bottom: 1px;
+    margin: 1rem 0;
   }
-  
-  
-  
-  
-  /*==================================================
-  共通　横並びのための設定
-  ===================================*/
-  .gnavi{
-      display: flex;
-      flex-wrap: wrap;/*スマホ表示折り返し用なのでPCのみなら不要*/
-      margin:0 0 30px 0;
-      list-style: none;
-  
+
+  .menu-toggle {
+    display: flex;
+    justify-content: flex-end;
   }
-  
-  .gnavi li a{
-      display: block;
-      padding:10px 20px;
-      text-decoration: none;
-      text-align: center;
-      color:black;
-      font-size: 1em;
-      text-align: center;
+
+  .gnavi.active {
+    display: flex;
+    flex-direction: column;
   }
-  
-  /*==================================================
-  　5-3-11 左右から線が伸びて枠線になる
-  ===================================*/
-  
-  .gnavi li{
-      /*線の基点とするためrelativeを指定*/
-    position: relative;
-      margin:0 10px;
+
+  .gnavi li {
+    margin: 0;
   }
-  
-  /*線の基点位置*/
-  .gnavi li::before,
-  .gnavi li::after{
-    content:"";
-      /*絶対配置で線の位置を決める*/
-    position: absolute;
-      /*線の形状*/
-    width: 0;
-    height:2px;
-    background:#0481A2;
-  /*アニメーションの指定*/
-    transition: all 0.2s linear;
-    transition-delay: 0.2s;
+
+  .gnavi li a {
+    padding: 10px;
   }
-  
-  .gnavi li::before{
-    right: 0;
-    top: 0;
-  }
-  .gnavi li::after{
-    left: 0;
-    bottom: 0;
-  }
-  
-  /*線の基点位置2 spanタグ*/
-  
-  .gnavi li span{
-    display: block;
-  }
-  
-  .gnavi li span::before,
-  .gnavi li span::after{
-    content:"";
-      /*絶対配置で線の位置を決める*/
-    position: absolute;
-      /*線の形状*/
-    width:2px;
-    height:0;
-    background: #0481A2;
-  /*アニメーションの指定*/
-    transition: all 0.2s linear;
-  }
-  
-  .gnavi li span::before{
-    left: 0;
-    top: 0;
-  }
-  .gnavi li span::after{
-    right: 0;
-    bottom: 0;
-  }
-  
-  /*現在地とhoverした際の線の変化*/
-  
-  .gnavi li.current::before,
-  .gnavi li.current::after,
-  .gnavi li:hover::before,
-  .gnavi li:hover::after{
-    width: 100%;/*横幅を100%に*/
-  }
-  
-  .gnavi li.current span::before,
-  .gnavi li.current span::after,
-  .gnavi li:hover span::before,
-  .gnavi li:hover span::after{
-    height: 100%;/*縦幅を100%に*/
-  }
-  
-  .link_icon{
-    margin-right: 8px;
-  }
-  
-  .img_wrap:hover{
-    box-shadow: 10px 10px 10px rgba(0,0,0,0.5);
-    transform: translateY(-2.5px);
-    transition-duration: 0.5s;
-  }
+}

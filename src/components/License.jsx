@@ -17,8 +17,8 @@ function Licenses() {
           <li>全商情報処理検定ビジネス情報部門１級</li>
           <li>基本情報技術者試験</li>
         </ul>
-        </div>
-      
+      </div>
+
     </section>
   );
 }
