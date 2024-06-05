@@ -6,5 +6,8 @@ export default defineConfig({
   server:{
     host:true,
   },
+  build: {
+    outDir: 'dist'  // これがデフォルトですが、確認しておきます
+  },
   plugins: [react()],
 })
