@@ -20,8 +20,14 @@ function Timeline() {
                 </div>
                 <div class="container left">
                     <div class="content">
-                        <h3>2022年</h3>
-                        <p>2022年に起こった重要な出来事や達成を記述します。</p>
+                        <h3>愛知工業大学入学<p>2024-2028（予定）</p></h3>
+                        <p>愛知工業大学情報科学科コンピューターシステム専攻</p>
+                    </div>
+                </div>
+                <div class="container right">
+                    <div class="content">
+                        <h3>システム工学研究会入サ<p>2024年4月</p></h3>
+                        <p>システム工学研究会にはいる</p>
                     </div>
                 </div>
 
