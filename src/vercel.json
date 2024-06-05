@@ -1,0 +1,17 @@
+{
+    "rewrites": [],
+    "redirects": [],
+    "headers": [],
+    "cleanUrls": true,
+    "trailingSlash": false,
+    "functions": {},
+    "routes": [
+      {
+        "src": "/path/to/javascript/files/*.js",
+        "headers": {
+          "Content-Type": "text/javascript"
+        }
+      }
+    ]
+  }
+  
