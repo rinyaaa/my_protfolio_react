@@ -1,7 +1,7 @@
 {
   "headers": [
     {
-      "source": "/my_protfolio_react/assets/(.*).js",
+      "source": "/src/*.js",
       "headers": [
         {
           "key": "Content-Type",
