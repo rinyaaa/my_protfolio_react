@@ -3,7 +3,6 @@
     "redirects": [],
     "cleanUrls": true,
     "trailingSlash": false,
-    "functions": {},
     "routes": [
       {
         "src": "/path/to/javascript/files/*.js",
