@@ -1,7 +1,6 @@
 {
     "rewrites": [],
     "redirects": [],
-    "headers": [],
     "cleanUrls": true,
     "trailingSlash": false,
     "functions": {},
@@ -11,6 +10,17 @@
         "headers": {
           "Content-Type": "text/javascript"
         }
+      }
+    ],
+    "headers": [
+      {
+        "source": "/my_protfolio_react/assets/(.*).js",
+        "headers": [
+          {
+            "key": "Content-Type",
+            "value": "application/javascript"
+          }
+        ]
       }
     ]
   }
