@@ -7,7 +7,8 @@ export default defineConfig({
   build: {
     rollupOptions: {
       external: [
-        '/my_protfolio_react/assets/index-53lfyRL8.css'
+        '/my_protfolio_react/assets/index-53lfyRL8.css',
+        'react-dom/client'
       ]
     }
   }
