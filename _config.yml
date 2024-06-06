@@ -1,0 +1,6 @@
+defaults:
+  - scope:
+      path: ""
+      type: "js"
+    values:
+      mime_type: "application/javascript"
