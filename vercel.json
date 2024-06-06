@@ -1,17 +1,17 @@
 {
-  "headers": [
+  "builds": [
     {
-      "source":"/my_protfolio_react/assets/*.js",
-      "headers": [
-        {
-          "key": "Content-Type",
-          "value": "application/javascript"
-        }
-      ]
+      "src": "package.json",
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "dist"
+      }
     }
   ],
-  "cleanUrls": true,
-  "trailingSlash": false,
-  "rewrites": [],
-  "redirects": []
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
+    }
+  ]
 }
