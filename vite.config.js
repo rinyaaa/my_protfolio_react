@@ -9,6 +9,9 @@ export default defineConfig({
     host:true,
   },
   build: {
+    external: [
+      '/my_protfolio_react/assets/index-53lfyRL8.css' // 外部ファイルとして扱う
+    ],
     outDir: 'dist',  // これがデフォルトですが、確認しておきます
     assetsInlineLimit: 0,
     manifest: true,
@@ -23,5 +26,4 @@ export default defineConfig({
       },
     },
   },
- 
 });
