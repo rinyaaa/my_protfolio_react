@@ -14,7 +14,7 @@
     ],
     "headers": [
       {
-        "source": "/my_protfolio_react/src/(.*).js",
+        "source": "/my_protfolio_react/assets/(.*).js",
         "headers": [
           {
             "key": "Content-Type",
