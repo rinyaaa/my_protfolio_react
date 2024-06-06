@@ -1,26 +1,17 @@
 {
-    "rewrites": [],
-    "redirects": [],
-    "cleanUrls": true,
-    "trailingSlash": false,
-    "routes": [
-      {
-        "src": "/path/to/javascript/files/*.js",
-        "headers": {
-          "Content-Type": "text/javascript"
+  "headers": [
+    {
+      "source": "/my_protfolio_react/assets/(.*).js",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "application/javascript"
         }
-      }
-    ],
-    "headers": [
-      {
-        "source": "/my_protfolio_react/assets/(.*).js",
-        "headers": [
-          {
-            "key": "Content-Type",
-            "value": "application/javascript"
-          }
-        ]
-      }
-    ]
-  }
-  
+      ]
+    }
+  ],
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "rewrites": [],
+  "redirects": []
+}
