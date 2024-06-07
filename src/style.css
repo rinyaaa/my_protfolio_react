@@ -34,7 +34,13 @@ body {
     text-align: center;
   }
 
+  .year {
+    padding-left: 250px;
+  }
 
+  .mei {
+    padding-right: 150px;
+  }
 
 }
 
