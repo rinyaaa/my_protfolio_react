@@ -1,90 +1,116 @@
-@media screen and (max-width:1490px) {
-
-
-  .tec {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    padding: 10px 80px;
-    flex-wrap: wrap;
-    margin-top: -30px;
-
-
-  }
-
-  .tec li {
-    display: inline;
-    padding-bottom: 1px;
-    display: block;
-    text-decoration: none;
-    font-size: 20px;
-    padding: 20px;
-    text-align: center;
-    font-size: 22px;
-
-  }
-
-
-}
-
-
-/*使用したことがる*/
-#projects h2 {
-  text-align: center;
-  padding-top: 15px;
-  font-family: "Amatic SC", sans-serif;
-  font-size: 80px;
-}
-
-.starsorange {
-  color: orange;
-}
-
-#projects {
+#projects{
+  height: 50vh;
   background-color: whitesmoke;
   width: 100%;
   margin: 0 auto;
   margin-top: 100px;
-  /*自己紹介とできることの間*/
+  transition: height 0.3s ease; /* スムーズに高さを変更するためのトランジション */
+}
+
+#projects h2 {
+  text-align: center;
+  font-family: "Amatic SC", sans-serif;
+  font-weight: bold;
+  font-size: 80px; /* モバイル用にフォントサイズを調整 */
+  margin-right: 0; /* 不要なマージンを削除 */
+}
+
+.skills-title {
+  cursor: pointer;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 .yok {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   margin-top: -40px;
-  /*h2と経験年数などの間*/
+}
+
+.tec {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background-color: white;
+  border-radius: 20px;
+  width: 60%;
+  height: 20%;
+}
+
+.tec li {
+  cursor: pointer;
+  margin: 10px;
+  font-size: 22px;
+  padding: 20px;
+  text-align: center;
+}
+
+.skill_img_wrap {
+  width:70px;
+  height: 70px;
+}
+.skill_img_wrap:hover {
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+  transform: translateY(-2.5px);
+  transition-duration: 0.5s;
+}
+.dropdown {
+  margin-top: -20px;
+  background-color: #fff;
+  text-align: center;
+  width: 60%;
+  border-radius: 0px 0px 20px 20px;
 }
 
 
+#projects.expanded {
+  height: auto; /* 内容に合わせて高さを自動調整 */
+  min-height: 60vh; /* 最小高さを設定 */
+}
 
-
-@media screen and (min-width:1491px) {
-
-
+@media screen and (max-width: 480px) {
+  .yok {
+    align-items: center;
+  }
 
   .tec {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    padding: 10px 100px;
-    flex-wrap: wrap;
-    margin-left: 20px;
-
+    flex-direction: column;
+    width: 100%;
+    padding: 10px;
+    margin-top: 0;
   }
 
   .tec li {
-    display: inline;
-    padding-bottom: 1px;
-    display: block;
-    text-decoration: none;
-    color: black;
-    font-size: 20px;
-    padding: 20px;
-    text-align: center;
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
   }
 
+  .dropdown {
+    font-size: 16px; /* ドロップダウンのフォントサイズを調整 */
+  }
 
+  .skills-title {
+    font-size: 24px; /* タイトルのフォントサイズを調整 */
+  }
+}
 
+@media screen and (min-width: 1491px) {
+  .tec {
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px 100px;
+    margin-left: 20px;
+  }
 
-
+  .tec li {
+    display: inline-block;
+    padding: 20px;
+    text-align: center;
+    font-size: 20px;
+  }
 }
