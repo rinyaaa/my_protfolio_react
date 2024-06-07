@@ -1,23 +1,26 @@
-#projects{
-  height: 50vh;
+#projects {
+  height: 40vh;
   background-color: whitesmoke;
   width: 100%;
   margin: 0 auto;
   margin-top: 100px;
-  transition: height 0.3s ease; /* スムーズに高さを変更するためのトランジション */
+  transition: height 0.3s ease;
+  /* スムーズに高さを変更するためのトランジション */
 }
 
 #projects h2 {
   text-align: center;
   font-family: "Amatic SC", sans-serif;
   font-weight: bold;
-  font-size: 80px; /* モバイル用にフォントサイズを調整 */
-  margin-right: 0; /* 不要なマージンを削除 */
+  font-size: 80px;
+  /* モバイル用にフォントサイズを調整 */
+  margin-right: 0;
+  /* 不要なマージンを削除 */
 }
 
 .skills-title {
   cursor: pointer;
-  text-align: center;
+  text-align: ter;
   margin-bottom: 20px;
 }
 
@@ -39,7 +42,7 @@
   border-radius: 20px;
   width: 60%;
   height: 20%;
-  
+
 }
 
 .tec li {
@@ -51,27 +54,31 @@
 }
 
 .skill_img_wrap {
-  width:70px;
+  width: 70px;
   height: 70px;
   margin-left: -30px;
 }
+
 .skill_img_wrap:hover {
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
   transform: translateY(-2.5px);
   transition-duration: 0.5s;
 }
+
 .dropdown {
-  margin-top: -20px;
   background-color: #fff;
   text-align: center;
-  width: 60%;
-  border-radius: 0px 0px 20px 20px;
+  width: 40%;
+  border-radius: 20px;
+  margin-top: 20px;
 }
 
 
 #projects.expanded {
-  height: auto; /* 内容に合わせて高さを自動調整 */
-  min-height: 60vh; /* 最小高さを設定 */
+  height: auto;
+  /* 内容に合わせて高さを自動調整 */
+  min-height: 45vh;
+  /* 最小高さを設定 */
 }
 
 @media screen and (max-width: 480px) {
@@ -93,11 +100,13 @@
   }
 
   .dropdown {
-    font-size: 16px; /* ドロップダウンのフォントサイズを調整 */
+    font-size: 16px;
+    /* ドロップダウンのフォントサイズを調整 */
   }
 
   .skills-title {
-    font-size: 24px; /* タイトルのフォントサイズを調整 */
+    font-size: 24px;
+    /* タイトルのフォントサイズを調整 */
   }
 }
 
