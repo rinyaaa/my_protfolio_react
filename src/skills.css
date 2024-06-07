@@ -1,5 +1,5 @@
 #projects {
-  height: 40vh;
+  height: 45vh;
   background-color: whitesmoke;
   width: 100%;
   margin: 0 auto;
@@ -77,7 +77,7 @@
 #projects.expanded {
   height: auto;
   /* 内容に合わせて高さを自動調整 */
-  min-height: 45vh;
+  min-height: 50vh;
   /* 最小高さを設定 */
 }
 

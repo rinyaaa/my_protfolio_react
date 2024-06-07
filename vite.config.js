@@ -9,10 +9,10 @@ export default defineConfig({
   plugins: [react()],
   build: {
     rollupOptions: {
-      external: [
+      input: {
         // ここに外部リソースとして扱いたくないファイルやパスを指定
-        '/my_protfolio_react/assets/index-53lfyRL8.css',
-      ]
+        main: './index.html'
+      }
     }
   }
 });
