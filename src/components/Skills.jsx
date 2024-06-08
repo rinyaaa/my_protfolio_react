@@ -74,9 +74,16 @@ function Skills() {
         {/* 選択されたアイテムに関連する情報を表示 */}
         {selectedItem && (
           <div className="dropdown">
-            {selectedItem === "HTML" && <p>{"高校３年の授業から使ってる。"}</p>}
+            {selectedItem === "HTML" && (
+              <p>
+                <h3>HTML</h3>
+                {"高校３年の授業から使ってる。"}
+              </p>
+            )}
+
             {selectedItem === "CSS" && (
               <p>
+                <h3>CSS</h3>
                 {
                   "高校３年の授業から使ってる。まだ初期のことしかできなくて幅などの計算が苦手"
                 }
@@ -84,19 +91,27 @@ function Skills() {
             )}
             {selectedItem === "JavaScript" && (
               <p>
+                <h3>Javascript</h3>
                 {
                   "高校３年の時から使ってる。簡単なものしか作れなくまだまだ勉強中"
                 }
               </p>
             )}
             {selectedItem === "C" && (
-              <p>{"大学の授業から触り始めたんで特に何もつくれない"}</p>
+              <p>
+                <h3>C</h3>
+                {"大学の授業から触り始めたんで特に何もつくれない"}
+              </p>
             )}
             {selectedItem === "React" && (
-              <p>{"最近特に勉強してる。このportfolioもreactで作ってる"}</p>
+              <p>
+                <h3>React</h3>
+                {"最近特に勉強してる。このportfolioもreactで作ってる"}
+              </p>
             )}
             {selectedItem === "Github" && (
               <p>
+                <h3>Github</h3>
                 {"pushくらいしか使ってない。まだブランチとか何も理解してない"}
               </p>
             )}

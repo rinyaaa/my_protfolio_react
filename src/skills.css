@@ -53,6 +53,7 @@
   text-align: center;
 }
 
+
 .skill_img_wrap {
   width: 70px;
   height: 70px;
@@ -76,12 +77,17 @@
 #projects.expanded {
   height: auto;
   /* 内容に合わせて高さを自動調整 */
-  min-height: 50vh;
+  min-height: 60vh;
   /* 最小高さを設定 */
 }
 
+
+
 @media screen and (max-width: 480px) {
  
+
+
+
   #projects {
     height: auto;
     min-height: 55vh; /* モバイル用に高さを調整 */

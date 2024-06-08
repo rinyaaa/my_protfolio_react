@@ -8,10 +8,7 @@ body {
 
 
 
-
-@media screen and (max-width:1490px) {
-
-
+@media screen and (max-width: 1490px) {
   .lic {
     padding: 0;
     margin: 0;
@@ -20,7 +17,6 @@ body {
     padding: 10px 10px;
     flex-wrap: wrap;
     margin: 0 auto;
-
   }
 
   .lic li {
@@ -41,16 +37,12 @@ body {
   .mei {
     padding-right: 150px;
   }
-
 }
-
-
 
 #licences {
   background-color: white;
   width: 100%;
   margin: 0 auto;
-
 }
 
 #licenses h2 {
@@ -61,14 +53,11 @@ body {
 
 .lic_yok {
   display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
-
-@media screen and (min-width:1491px) {
-
-
-
-
+@media screen and (min-width: 1491px) {
   .lic {
     padding: 0;
     margin: 0;
@@ -97,6 +86,32 @@ body {
   .mei {
     padding-right: 100px;
   }
+}
 
+@media screen and (max-width: 480px) {
+  .lic_yok {
+    flex-direction: column;
+    align-items: center;
+  }
 
+  .lic {
+    padding: 10px;
+    margin-top: 0;
+    flex-wrap: nowrap;
+  }
+
+  .lic li {
+    padding: 10px;
+    font-size: 18px;
+  }
+
+  .year {
+    display: none; /* 取得年度を非表示にする */
+  }
+
+  .mei {
+    padding-right: 0;
+    text-align: center;
+    margin-top: -50px;
+  }
 }
