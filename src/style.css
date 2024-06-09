@@ -64,7 +64,6 @@ body {
     list-style: none;
     padding: 10px 100px;
     flex-wrap: wrap;
-    margin-left: 20px;
   }
 
   .lic li {
@@ -80,7 +79,7 @@ body {
   }
 
   .year {
-    padding-left: 550px;
+    padding-left: 150px;
   }
 
   .mei {
