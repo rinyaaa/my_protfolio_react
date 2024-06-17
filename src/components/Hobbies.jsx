@@ -8,7 +8,9 @@ function Hobbies() {
       <ul className="hobby-list">
         <li>
           <h3>Swimming</h3>
-          {"aaaaa\naaa"}
+          {
+            "中学校から初めて高校までは競技でやっていました。(九州大会出場)\n今は運動程度で泳いでいます"
+          }
         </li>
         <li>
           <h3>Cooking</h3>
