@@ -1,0 +1,63 @@
+/* Hobbies.css */
+#hobby {
+    width: 100%;
+    
+  }
+  
+  #hobby h2 {
+    text-align: center;
+    font-family: "Amatic SC", sans-serif;
+    font-size: 70px;
+  }
+  
+  .hobby-list {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+    margin-top: -30px;
+    text-align: center;
+  }
+  
+  .hobby-list li {
+    display: inline-block; /* アイテムを横に並べる */
+    vertical-align: top;   /* 上部揃えにする */
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: whitesmoke ;
+    width: 350px; /* 固定幅を設定して均一な見た目に */
+    height: 200px;
+    box-sizing: border-box; /* パディングとボーダーを幅に含める */
+    white-space: pre-wrap;
+  
+}
+
+  
+  .hobby-list h3 {
+    margin: 0;
+    color: #555;
+    font-size: 1.2em;
+    text-align: center;
+}
+  
+  .hobby-list p {
+    margin: 5px 0 0;
+    color: #666;
+    
+  }
+  @media (max-width: 480px) {
+    #hobby h2 {
+      font-size: 50px;
+    }
+  
+    .hobby-list li {
+      display: block; /* アイテムを縦に並べる */
+      width: 90%; 
+      height: auto; /* 高さを自動に設定 */
+      margin: 10px 0; /* 上下にマージンを追加 */
+    }
+    .hobby-list{
+        margin-left: 20px;
+    }
+  }

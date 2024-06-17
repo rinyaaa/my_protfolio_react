@@ -4,6 +4,7 @@ import Profile from "./components/Profile";
 import Skills from "./components/Skills";
 import Licenses from "./components/License";
 import Timeline from "./components/Timeline";
+import Hobbies from "./components/Hobbies";
 
 import "./style.css";
 import "./nav.css";
@@ -15,10 +16,13 @@ function App() {
   return (
     <div>
       <Header />
-      <Profile />
-      <Skills />
-      <Licenses />
-      <Timeline />
+      <main>
+        <Profile />
+        <Skills />
+        <Licenses />
+        <Timeline />
+        <Hobbies />
+      </main>
     </div>
   );
 }
