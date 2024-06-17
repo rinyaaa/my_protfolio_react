@@ -1,7 +1,6 @@
 /* Hobbies.css */
 #hobby {
     width: 100%;
-    
   }
   
   #hobby h2 {
@@ -13,9 +12,7 @@
   .hobby-list {
     list-style: none;
     padding: 0;
-    width: 100%;
     margin-top: -30px;
-    text-align: center;
   }
   
   .hobby-list li {
