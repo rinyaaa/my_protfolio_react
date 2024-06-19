@@ -5,6 +5,7 @@ import Skills from "./components/Skills";
 import Licenses from "./components/License";
 import Timeline from "./components/Timeline";
 import Hobbies from "./components/Hobbies";
+import Fotter from "./components/Fotter";
 
 import "./style.css";
 import "./nav.css";
@@ -22,6 +23,7 @@ function App() {
         <Licenses />
         <Timeline />
         <Hobbies />
+        <Fotter />
       </main>
     </div>
   );

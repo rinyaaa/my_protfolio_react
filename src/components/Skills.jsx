@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import html from "./images/html.png";
+import { Icon } from "@iconify/react";
 
 function Skills() {
   const [selectedItem, setSelectedItem] = useState(null);
@@ -22,52 +22,22 @@ function Skills() {
       <div className="yok">
         <ul className="tec">
           <li onClick={() => handleItemClick("HTML")}>
-            <img className="skill_img_wrap" src={html} alt="html" />
+            <Icon className="skill_icon" icon="logos:html-5" />
           </li>
           <li onClick={() => handleItemClick("CSS")}>
-            <img
-              className="skill_img_wrap"
-              width="96"
-              height="96"
-              src="https://img.icons8.com/color/96/css3.png"
-              alt="css3"
-            />
+            <Icon className="skill_icon" icon="logos:css-3" />
           </li>
           <li onClick={() => handleItemClick("JavaScript")}>
-            <img
-              className="skill_img_wrap"
-              width="96"
-              height="96"
-              src="https://img.icons8.com/nolan/96/javascript-logo.png"
-              alt="javascript-logo"
-            />
+            <Icon className="skill_icon" icon="logos:javascript" />
           </li>
           <li onClick={() => handleItemClick("C")}>
-            <img
-              className="skill_img_wrap"
-              width="96"
-              height="96"
-              src="https://img.icons8.com/color/96/c-programming.png"
-              alt="c-programming"
-            />
+            <Icon className="skill_icon" icon="logos:c" />
           </li>
           <li onClick={() => handleItemClick("React")}>
-            <img
-              className="skill_img_wrap"
-              width="80"
-              height="80"
-              src="https://img.icons8.com/officel/80/react.png"
-              alt="react"
-            />
+            <Icon className="skill_icon" icon="logos:react" />
           </li>
           <li onClick={() => handleItemClick("Github")}>
-            <img
-              className="skill_img_wrap"
-              width="90"
-              height="90"
-              src="https://img.icons8.com/ios-glyphs/90/github.png"
-              alt="github"
-            />
+            <Icon className="skill_icon" icon="logos:github-icon" />
           </li>
           {/* 他のリストアイテムについても同様に処理を追加 */}
         </ul>
