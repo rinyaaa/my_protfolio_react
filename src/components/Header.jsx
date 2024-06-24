@@ -27,7 +27,7 @@ function Header() {
           <img className="img_wrap" src={x} alt="X" />
         </a>
       </div>
-      <h1>私のポートフォリオ</h1>
+      <h1>Myportfolio</h1>
       <nav>
         <div
           className={`menu-toggle ${menuOpen ? "active" : ""}`}

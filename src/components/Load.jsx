@@ -17,7 +17,7 @@ export default function Load() {
     const timeoutId = setTimeout(() => {
       setLoading(false);
       document.body.style.overflow = "scroll";
-    }, 2600);
+    }, 2500);
 
     return () => {
       clearTimeout(timeoutId);
