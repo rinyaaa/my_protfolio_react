@@ -36,7 +36,7 @@ function Skills() {
           <li onClick={() => handleItemClick("React")}>
             <Icon className="skill_icon" icon="logos:react" />
           </li>
-          <li onClick={() => handleItemClick("Github")}>
+          <li onClick={() => handleItemClick("GitHub")}>
             <Icon className="skill_icon" icon="logos:github-icon" />
           </li>
           {/* 他のリストアイテムについても同様に処理を追加 */}
