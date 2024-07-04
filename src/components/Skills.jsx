@@ -79,7 +79,7 @@ function Skills() {
                 {"最近特に勉強してる。このportfolioもreactで作ってる"}
               </p>
             )}
-            {selectedItem === "Github" && (
+            {selectedItem === "GitHub" && (
               <p>
                 <h3>Github</h3>
                 {"pushくらいしか使ってない。まだブランチとか何も理解してない"}
