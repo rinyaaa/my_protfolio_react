@@ -12,15 +12,23 @@
     "@emotion/styled": "^11.11.5",
     "@iconify/react": "^5.0.1",
     "@mui/joy": "^5.0.0-beta.36",
+    "@vercel/fun": "^1.1.2",
+    "@vercel/node": "^2.10.3",
+    "debug": "^4.4.0",
+    "path-to-regexp": "^8.2.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-icons": "^5.2.1",
-    "react-vivus": "^0.0.2"
+    "react-router-dom": "^7.1.3",
+    "react-vivus": "^0.0.2",
+    "semver": "^7.6.3",
+    "tar": "^7.4.3",
+    "undici": "^7.2.1"
   },
   "devDependencies": {
     "@types/react-dom": "^18.3.0",
     "@vitejs/plugin-react": "^1.3.2",
     "vercel": "^32.3.0",
-    "vite": "^2.4.4"
+    "vite": "^6.0.7"
   }
 }
