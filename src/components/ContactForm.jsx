@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import "./App.css"; // 必要ならCSSファイルを追加
 
 function ContactForm() {
   const [formData, setFormData] = useState({

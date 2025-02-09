@@ -1,5 +1,5 @@
 #projects {
-  height: 45vh;
+  min-height: 45vh;
   background-color: whitesmoke;
   width: 100%;
   margin: 0 auto;
@@ -72,6 +72,7 @@
   width: 40%;
   border-radius: 20px;
   margin-top: 20px;
+  min-height: 100px;
 }
 
 #projects.expanded {

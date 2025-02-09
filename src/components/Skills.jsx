@@ -38,7 +38,7 @@ const skillData = [
   },
 ];
 
-function Skills() {
+const Skills = () => {
   // 選択されたスキルを管理するステート
   const [selectedItem, setSelectedItem] = useState(null);
 
@@ -70,6 +70,6 @@ function Skills() {
       </div>
     </section>
   );
-}
+};
 
 export default Skills;

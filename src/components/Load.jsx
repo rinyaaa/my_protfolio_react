@@ -8,14 +8,14 @@ import App from "../App";
 import "../loading.css";
 
 export default function Load() {
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
     // ローディング中はスクロールをロック
     document.body.style.overflow = "hidden";
 
     const timeoutId = setTimeout(() => {
-      setLoading(false);
+      setLoading(true);
       document.body.style.overflow = "scroll";
     }, 2500);
 
@@ -26,5 +26,5 @@ export default function Load() {
     };
   }, []);
 
-  return <div>{loading ? <Loading /> : <App />}</div>;
+  return <div>{loading ? <App /> : <Loading />}</div>;
 }

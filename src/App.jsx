@@ -15,7 +15,7 @@ import "./timeline.css";
 
 function App() {
   return (
-    <div>
+    <>
       <Header />
       <main>
         <Profile />
@@ -23,9 +23,9 @@ function App() {
         <Licenses />
         <Timeline />
         <Hobbies />
-        <Fotter />
+        <Fotter />\
       </main>
-    </div>
+    </>
   );
 }
 
