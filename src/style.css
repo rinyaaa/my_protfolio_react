@@ -1,116 +1,47 @@
-body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-  margin: 0;
-  padding: 0;
-  width: 100%;
+.licenses-container {
+  background: white;
+  padding: 40px;
+  text-align: center;
 }
 
-
-
-@media screen and (max-width: 1490px) {
-  .lic {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    margin-top: -45px;
-    padding: 10px 10px;
-    flex-wrap: wrap;
-    margin: 0 auto;
-  }
-
-  .lic li {
-    display: inline;
-    padding-bottom: 1px;
-    display: block;
-    text-decoration: none;
-    color: black;
-    font-size: 20px;
-    padding: 20px;
-    text-align: center;
-  }
-
-  .year {
-    padding-left: 250px;
-  }
-
-  .mei {
-    padding-right: 150px;
-  }
-}
-
-#licences {
-  background-color: white;
-  width: 100%;
-  margin: 0 auto;
-}
-
-#licenses h2 {
+.license-title {
   text-align: center;
   font-family: "Amatic SC", sans-serif;
-  font-size: 70px;
+  font-weight: bold;
+  font-size: 80px; /* モバイル用にフォントサイズを調整 */
+  margin-right: 0; /* 不要なマージンを削除 */
 }
 
-.lic_yok {
+.license-list {
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
 }
 
-@media screen and (min-width: 1491px) {
-  .lic {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    padding: 10px 100px;
-    flex-wrap: wrap;
-  }
-
-  .lic li {
-    display: inline;
-    padding-bottom: 1px;
-    display: block;
-    text-decoration: none;
-    color: black;
-    font-size: 20px;
-    padding: 20px;
-    text-align: center;
-    margin-left: 30px;
-  }
-
-  .year {
-    padding-left: 150px;
-  }
-
-  .mei {
-    padding-right: 100px;
-  }
+.license-item {
+  background-color: whitesmoke;
+  padding: 15px 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  max-width: 400px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-@media screen and (max-width: 480px) {
-  .lic_yok {
-    flex-direction: column;
-    align-items: center;
-  }
+.license-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
 
-  .lic {
-    padding: 10px;
-    margin-top: 0;
-    flex-wrap: nowrap;
-  }
+.license-date {
+  font-size: 14px;
+  color: #6c757d;
+  margin-bottom: 5px;
+}
 
-  .lic li {
-    padding: 10px;
-    font-size: 18px;
-  }
-
-  .year {
-    display: none; /* 取得年度を非表示にする */
-  }
-
-  .mei {
-    padding-right: 0;
-    text-align: center;
-    margin-top: -50px;
-  }
+.license-name {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
 }
