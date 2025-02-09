@@ -1,11 +1,12 @@
 #projects {
   min-height: 45vh;
-  background-color: whitesmoke;
+  background: linear-gradient(to bottom, #f8f9fa, #e9ecef);
   width: 100%;
   margin: 0 auto;
   margin-top: 100px;
   transition: height 0.3s ease;
-  /* スムーズに高さを変更するためのトランジション */
+  border-radius: 15px;
+  padding: 20px;
 }
 
 #projects h2 {
@@ -13,16 +14,10 @@
   font-family: "Amatic SC", sans-serif;
   font-weight: bold;
   font-size: 80px;
-  /* モバイル用にフォントサイズを調整 */
-  margin-right: 0;
-  /* 不要なマージンを削除 */
+  margin-top: -15px;  
 }
 
-.skills-title {
-  cursor: pointer;
-  text-align: center; /* "ter" -> "center" に修正 */
-  margin-bottom: 20px;
-}
+
 
 .yok {
   display: flex;
@@ -33,126 +28,84 @@
 
 .tec {
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
-  flex-wrap: wrap; /* 画像が横に並びきれない場合に改行させる */
   list-style: none;
-  padding: 0;
+  padding: 20px;
   margin: 0;
-  background-color: white;
+  background: rgba(255, 255, 255, 0.8);
   border-radius: 20px;
   width: 60%;
-  height: 20%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .tec li {
   cursor: pointer;
-  margin: 10px;
+  margin: 15px;
   font-size: 22px;
   padding: 20px;
-  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 10px;
 }
 
+.tec li:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
 
 .skill_icon {
-  width:70px;
+  width: 70px;
   height: 70px;
-  margin-left: -30px;
+  transition: transform 0.5s;
 }
 
 .skill_icon:hover {
-  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
-  transform: translateY(-2.5px);
-  transition-duration: 0.5s;
+  transform: rotate(10deg) scale(1.1);
 }
 
 .dropdown {
-  background-color: #fff;
+  background: white;
   text-align: center;
   width: 40%;
   border-radius: 20px;
   margin-top: 20px;
   min-height: 100px;
+  padding: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.dropdown h3 {
+  font-size: 24px;
+  color: #444;
 }
 
 #projects.expanded {
-  height: auto;
-  /* 内容に合わせて高さを自動調整 */
   min-height: 60vh;
-  /* 最小高さを設定 */
 }
 
-
-
 @media screen and (max-width: 480px) {
- 
-
-
-
   #projects {
-    height: auto;
-    min-height: 55vh; /* モバイル用に高さを調整 */
-    margin-top: 20px; /* マージンを減らしてモバイル表示に対応 */
+    min-height: 55vh;
+    margin-top: 20px;
   }
-
-  #projects.expanded {
-    height: auto;
-    /* 内容に合わせて高さを自動調整 */
-    min-height: 70vh;
-    /* 最小高を設定 */
-  }
-  
 
   #projects h2 {
-    font-size: 50px; /* フォントサイズを調整 */
-  }
-
-  .yok {
-    align-items: center;
-    margin-top: 0; /* 上部のマージンを減らして調整 */
+    font-size: 50px;
   }
 
   .tec {
-    flex-direction: row; /* 横並びにする */
     width: 80%;
     padding: 10px;
-    margin-top: -10px; /* 上部のマージンを調整 */
-  }
-
-  .tec li {
-    width: auto; /* 幅を自動調整 */
-    padding: 10px;
-    font-size: 18px;
   }
 
   .skill_icon {
     width: 50px;
     height: 50px;
-    margin-left: 0; /* マージンを中央揃えにするために削除 */
   }
 
   .dropdown {
-    font-size: 16px; /* ドロップダウンのフォントサイズを調整 */
-    width: 80%; /* 幅を広げて表示 */
-  }
-
-  .skills-title {
-    font-size: 24px; /* タイトルのフォントサイズを調整 */
-  }
-}
-
-@media screen and (min-width: 1491px) {
-  .tec {
-    flex-direction: row;
-    justify-content: center;
-    padding: 10px 100px;
-    margin-left: 20px;
-  }
-
-  .tec li {
-    display: inline-block;
-    padding: 20px;
-    text-align: center;
-    font-size: 20px;
+    font-size: 16px;
+    width: 80%;
   }
 }

@@ -1,7 +1,7 @@
 /* styles.css */
 
 .timecolor {
-    background-color: whitesmoke;
+    background: linear-gradient(to bottom, #f8f9fa, #e9ecef);
 }
 
 .timecolor h2 {
