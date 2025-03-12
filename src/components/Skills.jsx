@@ -48,7 +48,7 @@ const Skills = () => {
   };
 
   return (
-    <section id="projects" className={selectedItem ? "expanded" : ""}>
+    <section id="projects">
       <h2>Skills</h2>
       <div className="yok">
         {/* スキル一覧を表示 */}
