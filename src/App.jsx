@@ -23,7 +23,7 @@ function App() {
         <Licenses />
         <Timeline />
         <Hobbies />
-        <Fotter />\
+        <Fotter />
       </main>
     </>
   );

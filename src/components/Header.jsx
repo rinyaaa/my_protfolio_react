@@ -13,7 +13,7 @@ const socialLinks = [
 
 const menuItems = [
   { href: "#about", label: "私について" },
-  { href: "#projects", label: "プロジェクト" },
+  { href: "/projects", label: "プロジェクト" },
   { href: "#contact", label: "問い合わせ" },
 ];
 
